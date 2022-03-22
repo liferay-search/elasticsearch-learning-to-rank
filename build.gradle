@@ -10,9 +10,12 @@ buildscript {
 
 allprojects {
   group = 'com.o19s'
-  version = "${ltrVersion}-es${elasticsearchVersion}"
+  version = "${ltrVersion}-es${elasticsearchVersion}-jdk8"
 
   apply plugin: 'java'
+
+  sourceCompatibility = 1.8
+  targetCompatibility = 1.8
 
   repositories {
     mavenCentral()
